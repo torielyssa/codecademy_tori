@@ -43,17 +43,20 @@ dictionary2 = {}
 def construct_hurricane_dictionary(names, months, years, max_sustained_winds, areas_affected, updated_damages, deaths):
 
   for i in range(len(names)):
-    dictionary2 = {'Name': names[i], 'Month': months[i], 'Year': years[i], 'Max Sustained Wind': max_sustained_winds[i], 'Areas Affected': areas_affected[i], 'Damage': updated_damages[i], 'Deaths': deaths[i]}
+    dictionary2 = {'Name': names[i], 
+                   'Month': months[i], 
+                   'Year': years[i], 
+                   'Max Sustained Wind': max_sustained_winds[i], 
+                   'Areas Affected': areas_affected[i], 
+                   'Damage': updated_damages[i], 
+                   'Deaths': deaths[i]}
     dictionary1[names[i]] = dictionary2
 
   print(dictionary1)
-  print("END OF DIC1")
 
 construct_hurricane_dictionary(names, months, years, max_sustained_winds, areas_affected, updated_damages, deaths)
 
 # write your construct hurricane by year dictionary function here:
-
-print("SEPARATING")
 
 def hurricane_by_year(old_dictionary):
   hurricane_dictionary_year = {}
@@ -67,8 +70,6 @@ def hurricane_by_year(old_dictionary):
   print(hurricane_dictionary_year)
 hurricane_by_year(dictionary1)
 
-print("END OF DIC2")
-print("SEPARATING")
 
 # write your count affected areas function here:
 dictionary3 = {}
@@ -84,9 +85,6 @@ def count_affected_areas(input_dictionary):
         dictionary3[j] += 1
   print(dictionary3)
 count_affected_areas(dictionary1)  
-
-print("END OF DIC3")
-print("SEPARATING")
 
 # write your find most affected area function here:
 def most_affected_area(inputdict):
@@ -137,9 +135,6 @@ def mortality_rating(inputdict3):
   print(mortality_dictionary)
 mortality_rating(dictionary1)
 
-print("ENDOFDIC4")
-print("SEPARATING")
-
 # write your greatest damage function here:
 
 def greatest_damage(inputdict5):
@@ -180,11 +175,5 @@ def damages_rating(inputdict6):
       damages_dictionary[5].append(current_hurricane)
   print(damages_dictionary)
 damages_rating(dictionary1)
-
-print("ENDOFDIC6")
-print("SEPARATING")
-
-
-
 
 
