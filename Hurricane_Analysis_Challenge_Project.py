@@ -31,9 +31,9 @@ def update_damages(some_input2):
       updated_damages.append(float(i[:-1])*1000000)
     elif 'B' in i:
       updated_damages.append(float(i[:-1])*1000000000)
-  print(updated_damages)
+  return updated_damages
 
-update_damages(damages)
+print(update_damages(damages))
 
 
 # write your construct hurricane dictionary function here:
@@ -52,9 +52,9 @@ def construct_hurricane_dictionary(names, months, years, max_sustained_winds, ar
                    'Deaths': deaths[i]}
     dictionary1[names[i]] = dictionary2
 
-  print(dictionary1)
+  return dictionary1
 
-construct_hurricane_dictionary(names, months, years, max_sustained_winds, areas_affected, updated_damages, deaths)
+print(construct_hurricane_dictionary(names, months, years, max_sustained_winds, areas_affected, updated_damages, deaths))
 
 # write your construct hurricane by year dictionary function here:
 
@@ -67,8 +67,8 @@ def hurricane_by_year(old_dictionary):
     current_year = current_hurricane.get('Year')
     if current_year not in hurricane_dictionary_year:
       hurricane_dictionary_year[current_year] = current_hurricane
-  print(hurricane_dictionary_year)
-hurricane_by_year(dictionary1)
+  return hurricane_dictionary_year
+print(hurricane_by_year(dictionary1))
 
 
 # write your count affected areas function here:
@@ -83,8 +83,8 @@ def count_affected_areas(input_dictionary):
         dictionary3[j] = 1
       elif j in dictionary3:
         dictionary3[j] += 1
-  print(dictionary3)
-count_affected_areas(dictionary1)  
+  return dictionary3
+print(count_affected_areas(dictionary1))
 
 # write your find most affected area function here:
 def most_affected_area(inputdict):
@@ -132,8 +132,8 @@ def mortality_rating(inputdict3):
       mortality_dictionary[4].append(current_hurricane)
     elif current_deaths >= 10000:
       mortality_dictionary[5].append(current_hurricane)
-  print(mortality_dictionary)
-mortality_rating(dictionary1)
+  return mortality_dictionary
+print(mortality_rating(dictionary1))
 
 # write your greatest damage function here:
 
@@ -173,7 +173,7 @@ def damages_rating(inputdict6):
       damages_dictionary[4].append(current_hurricane)
     elif current_damages >= 50000000000:
       damages_dictionary[5].append(current_hurricane)
-  print(damages_dictionary)
-damages_rating(dictionary1)
+  return damages_dictionary
+print(damages_rating(dictionary1))
 
 
