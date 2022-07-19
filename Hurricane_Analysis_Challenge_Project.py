@@ -35,10 +35,6 @@ def update_damages(some_input2):
 
 update_damages(damages)
 
-#def print_function(input):
- # print(input)
-
-#print_function("Hallo")
 
 # write your construct hurricane dictionary function here:
 dictionary1 = {}
