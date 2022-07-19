@@ -1,5 +1,3 @@
 Hello!
 
-This is a Codecadamy Git Tutorial.
-
-GitHub desktop makes interacting with Git easy!
+This is where I store my code that I wrote for my Codeacademy Data Science course.
